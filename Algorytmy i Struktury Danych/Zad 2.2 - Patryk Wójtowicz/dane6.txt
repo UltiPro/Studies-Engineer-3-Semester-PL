@@ -1,0 +1,20 @@
+4 4 4
+xxxx
+xxxx
+xxxx
+xxxx
+
+xxxx
+oxxx
+xxxx
+xxxx
+
+xxxx
+oxxx
+xxxx
+xxxx
+
+xxxx
+xxxx
+oooo
+oooo

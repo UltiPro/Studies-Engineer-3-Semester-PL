@@ -1,0 +1,66 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+N = 64
+x = np.arange(N)
+y1 = np.sin(2*np.pi*x/N)
+h = np.exp(-x/10)
+fy1 = np.fft.fft(y1)
+fh = np.fft.fft(h)
+z = fy1 * fh
+fz = np.fft.fft(z)
+
+plt.figure(figsize=(8,6),tight_layout=1)
+
+plt.subplot(3,2,1)
+plt.stem(np.real(fy1),use_line_collection='true')
+plt.title('Re(y1[n])')
+plt.xlabel('Numer próbki')
+plt.ylabel('Amplituda')
+plt.axhline(y=0,color = "k",)
+plt.axvline(x=0,color = "k")
+plt.axvline(x=63,color = "grey",linestyle='--')
+plt.grid(True,which='both')
+plt.ylim(-1,1)
+
+plt.subplot(3,2,2)
+plt.stem(np.real(fh),use_line_collection='true')
+plt.title('Re(h[n])')
+plt.xlabel('Numer próbki')
+plt.ylabel('Amplituda')
+plt.axhline(y=0,color = "k",)
+plt.axvline(x=0,color = "k")
+plt.axvline(x=63,color = "grey",linestyle='--')
+plt.grid(True,which='both')
+
+plt.subplot(3,2,3)
+plt.stem(np.real(z),use_line_collection='true')
+plt.title('Re(G(k))')
+plt.xlabel('Numer próbki')
+plt.ylabel('Amplituda')
+plt.axhline(y=0,color = "k",)
+plt.axvline(x=0,color = "k")
+plt.axvline(x=63,color = "grey",linestyle='--')
+plt.grid(True,which='both')
+
+plt.subplot(3,2,5)
+plt.stem(np.real(fz),use_line_collection='true')
+plt.title('Re(Ifft(G(k)))')
+plt.xlabel('Numer próbki')
+plt.ylabel('Amplituda')
+plt.axhline(y=0,color = "k",)
+plt.axvline(x=0,color = "k")
+plt.axvline(x=63,color = "grey",linestyle='--')
+plt.grid(True,which='both')
+
+plt.subplot(3,2,6)
+plt.stem(np.convolve(y1,h),use_line_collection='true')
+plt.title('Splot liniowy y1*h')
+plt.xlabel('Numer próbki')
+plt.ylabel('Amplituda')
+plt.axhline(y=0,color = "k",)
+plt.axvline(x=0,color = "k")
+plt.axvline(x=126,color = "grey",linestyle='--')
+plt.grid(True,which='both')
+
+plt.show()

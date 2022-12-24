@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1644333895 source:c:\users\janusz\onedrive\dokumenty\code blocks\karta postaci\main.cpp
+	<iostream>
+	<stdio.h>
+	<cstdlib>
+	<conio.h>
+	<windows.h>
+	<unistd.h>
+	<list>
+	<fstream>
+	"Bohater.h"
+
+1644336342 source:c:\users\janusz\onedrive\dokumenty\code blocks\karta postaci\bohater_objective.cpp
+	<iostream>
+	<conio.h>
+	<string>
+	<unistd.h>
+	"Bohater.h"
+
+1644260121 c:\users\janusz\onedrive\dokumenty\code blocks\karta postaci\bohater_objective.cpp
+	<iostream>
+	"bohater.h"
+
+1644336266 c:\users\janusz\onedrive\dokumenty\code blocks\karta postaci\bohater.h
+	"Postac.h"
+	<string>
+
+1644261106 c:\users\janusz\onedrive\dokumenty\code blocks\karta postaci\dodaj.h
+
+1644336232 c:\users\janusz\onedrive\dokumenty\code blocks\karta postaci\postac.h
+	<string>
+
+1644336010 source:c:\users\janusz\onedrive\dokumenty\code blocks\karta postaci\postac_objective.cpp
+	<iostream>
+	<conio.h>
+	<string>
+	<unistd.h>
+	"Postac.h"
+

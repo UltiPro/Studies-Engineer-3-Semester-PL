@@ -1,0 +1,32 @@
+function [stft, f, t] = stft(x, nfft, fs)
+step = 16;
+if size(x, 2) > 1
+x = x';
+end
+maxX = max(abs(x));
+x = x/maxX;
+signalL = length(x);
+win = hann(256, 'periodic');
+rows = ceil((1+nfft)/2);
+columns = 1+fix((signalL-256)/step);
+stft = zeros(rows, columns);
+indeks = 0;
+kolumna = 1;
+while indeks + 256 <= signalL
+xw = x(indeks+1:indeks+256).*win;
+X = fft(xw, nfft);
+stft(:, kolumna) = X(1:rows);
+indeks = indeks + step;
+kolumna = kolumna + 1;
+end
+t = (256/2:step:256/2+(columns-1)*step)/fs;
+f = (0:rows-1)*fs/nfft;
+K = sum(hamming(256, 'periodic'))/256;
+stft = abs(stft)/256/K;
+if rem(nfft, 2)
+ st(2:end, :) = stft(2:end, :).*2;
+else
+stft(2:end-1, :) = stft(2:end-1, :).*2;
+end
+stft = 20*log10(stft + 1e-6);
+end
