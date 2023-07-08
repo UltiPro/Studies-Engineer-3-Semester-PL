@@ -1,0 +1,4 @@
+Janusz Czlowiek Wojownik Male 6 2600 25 15 20
+Patryk Elf Lowca Male 1 100 10 10 10
+Norbert Ork Norbert Male 1 100 10 10 10
+Klaudia Ork Wojownik Female 1 100 10 10 10
