@@ -58,7 +58,9 @@
         </option>
         <option>
           <name>RTDescription</name>
-          <state>Use the normal configuration of the C/EC++ runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
+          <state>Use the normal configuration of the C/EC++ runtime library. No locale interface, C
+            locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats
+            in strtod.</state>
         </option>
         <option>
           <name>RTConfigPath</name>
@@ -94,7 +96,8 @@
         <option>
           <name>GeneralMisraRules</name>
           <version>0</version>
-          <state>1000111110110101101110011100111111101110011011000101110111101101100111111111111100110011111001110111001111111111111111111111111</state>
+          <state>
+            1000111110110101101110011100111111101110011011000101110111101101100111111111111100110011111001110111001111111111111111111111111</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -106,7 +109,7 @@
         </option>
         <option>
           <name>OGChipSelectMenu</name>
-          <state>MSP430F149	MSP430F149</state>
+          <state>MSP430F149 MSP430F149</state>
         </option>
         <option>
           <name>GStackHeapOverride</name>
@@ -314,7 +317,8 @@
         <option>
           <name>CompilerMisraRules</name>
           <version>0</version>
-          <state>1000111110110101101110011100111111101110011011000101110111101101100111111111111100110011111001110111001111111111111111111111111</state>
+          <state>
+            1000111110110101101110011100111111101110011011000101110111101101100111111111111100110011111001110111001111111111111111111111111</state>
         </option>
         <option>
           <name>CompilerMisraOverride</name>
@@ -524,7 +528,7 @@
     <settings>
       <name>BICOMP</name>
       <archiveVersion>0</archiveVersion>
-      <data/>
+      <data />
     </settings>
     <settings>
       <name>BUILDACTION</name>
@@ -839,7 +843,7 @@
     <settings>
       <name>BILINK</name>
       <archiveVersion>0</archiveVersion>
-      <data/>
+      <data />
     </settings>
   </configuration>
   <configuration>
@@ -934,7 +938,8 @@
         <option>
           <name>GeneralMisraRules</name>
           <version>0</version>
-          <state>1000111110110101101110011100111111101110011011000101110111101101100111111111111100110011111001110111001111111111111111111111111</state>
+          <state>
+            1000111110110101101110011100111111101110011011000101110111101101100111111111111100110011111001110111001111111111111111111111111</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -946,7 +951,7 @@
         </option>
         <option>
           <name>OGChipSelectMenu</name>
-          <state>MSP430F149	MSP430F149</state>
+          <state>MSP430F149 MSP430F149</state>
         </option>
         <option>
           <name>GStackHeapOverride</name>
@@ -1153,7 +1158,8 @@
         <option>
           <name>CompilerMisraRules</name>
           <version>0</version>
-          <state>1000111110110101101110011100111111101110011011000101110111101101100111111111111100110011111001110111001111111111111111111111111</state>
+          <state>
+            1000111110110101101110011100111111101110011011000101110111101101100111111111111100110011111001110111001111111111111111111111111</state>
         </option>
         <option>
           <name>CompilerMisraOverride</name>
@@ -1363,7 +1369,7 @@
     <settings>
       <name>BICOMP</name>
       <archiveVersion>0</archiveVersion>
-      <data/>
+      <data />
     </settings>
     <settings>
       <name>BUILDACTION</name>
@@ -1678,7 +1684,7 @@
     <settings>
       <name>BILINK</name>
       <archiveVersion>0</archiveVersion>
-      <data/>
+      <data />
     </settings>
   </configuration>
   <file>
@@ -1697,5 +1703,3 @@
     <name>$PROJ_DIR$\portyLcd.h</name>
   </file>
 </project>
-
-

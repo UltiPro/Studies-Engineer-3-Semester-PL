@@ -1,3 +1,3 @@
-void initUart( int Speed);
+void initUart(int Speed);
 void UartCharTransmit(unsigned char znak);
-void UartStringTransmit(char * napis);
+void UartStringTransmit(char *napis);
